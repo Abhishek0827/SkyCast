@@ -11,7 +11,7 @@ export default function MainWeather({resultType, place, temperature, humidity, w
             <h2>Weather : {weather}</h2>
           </div>
           <div className="symbols">
-            <img src={`public/${symbol}`} alt="src/assets/sun.png" id="SearchForcastIcon" />
+            <img src={`${symbol}`} alt="src/assets/sun.png" id="SearchForcastIcon" />
            
           </div>
         </div>

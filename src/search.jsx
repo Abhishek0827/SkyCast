@@ -194,7 +194,7 @@ export default function Search() {
 
       <div id="mapSection">
         <div className="mapLayer" id="contryMap">
-          <img src="public/Map.png" alt="Map" />
+          <img src="Map.png" alt="Map" />
         </div>
         <div className="mapLayer" id="mapName">
           <div className="statename up" id="Uttar pradesh" onClick={mapClk}>
