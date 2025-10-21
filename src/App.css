@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+body {
+  /* background-image: url("./assets/plcementBg.png");
+  background-size: cover;
+  background-attachment: fixed; */
+  background: linear-gradient(to bottom, rgb(0, 81, 255), rgb(255, 255, 255));
+  height: max-content;
+}
+
+header {
+  /* border: 1px solid red; */
+  max-width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  
+  font-size: 40px;
+  font-weight: 800;
+}
+#logo a {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+#searchForm{
+    /* border: 1px solid red; */
+  border-radius: 7px;
+  overflow: hidden;
+  height: 30px;
+  display: flex;
+  
+}
+#searchInput {
+  /* border: 1px solid red; */
+  border: transparent;
+  outline: none;
+  padding-left: 10px;
+ height: 100%;
+  outline: none;
+  text-align: start;
+  width: 500px;
+}
+#searchForm button{
+  padding: 0px 10px;
+  height: 100%;
+  background-color: white;
+  border: none;
+}
+.Forcast {
+  background-color: rgba(159, 159, 159, 0.256);
+  border-radius: 20px;
+  margin: auto;
+  padding: 0 50px;
+  width: 80%;
+  height: 300px;
+  color: white;
+  font-size: 12px;
+  text-shadow: 0px 0px 10px rgba(72, 72, 72, 0.39);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.Forcast>div{
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.symbols{
+  /* border: 1px solid red; */
+  height: 150px;
+}
+#SearchForcastIcon{
+  height: 100%;
+}
+#mapSection {
+  margin: auto;
+  width: min(500px,100%);
+  height: 500px;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.mapLayer {
+  /* border: 2px solid rgb(47, 255, 0); */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#contryMap {
+  order: 2;
+}
+#contryMap img {
+  width: 100%;
+  height: 100%;
+}
+#mapName {
+  /* background-color: rgba(255, 0, 0, 0.284); */
+  order: 1;
+}
+.statename {
+  /* border: 1px solid red; */
+  font-size: 12px;
+  font-weight: lighter;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  height: 10px;
+  width:fit-content;
+  position: relative;
+  /* background-image: url(./assets/pinActive.png); */
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.up {
+  top: 37%;
+  left: 40%;
+}
+.bihar{
+  top: 39%;
+  left: 60%;
+}
+.uk {
+  top: 25%;
+  left: 38%;
+}
+.hp {
+  top: 17%;
+  left: 30%;
+}
+.haryana{
+  top: 23%;
+  left: 29%;
+}
+.punjab{
+  top: 16%;
+  left: 26%;
+}
+.rajasthan{
+  top: 25%;
+  left: 20%;
+}
+.gujarat{
+  top: 35%;
+  left: 13%;
+}
+.delhi{
+  top: 17.5%;
+  left: 33.5%;
+}
+.jharkhand{
+  top: 30%;
+  left: 56%;
+}
+.mp{
+  top: 30%;
+  left: 32%;
+}
+.maharashtra{
+  top: 40%;
+  left: 22%;
+}
+.chhattisgarh{
+  top: 30%;
+  left: 45%;
+}
+.telangana{
+  top: 40%;
+  left: 36%;
+}
+.odisha{
+  top: 29%;
+  left: 57%;
+}
+.wb{
+  top: 20%;
+  left: 65%;
+}
+.karnataka{
+  top: 45%;
+  left: 24%;
+}
+.ap{
+  top: 40%;
+  left: 35%;
+}
+.tn{
+  top: 50%;
+  left: 35%;
+}
+.kerala{
+  top: 50%;
+  left: 29%;
+}
+.sikkim{
+  top: -5%;
+  left: 66%;
+}
+.assam{
+  top: -4%;
+  left: 80%;
+}
+.meghalaya{
+  top: -2%;
+  left: 73%;
+}
+.arunachal{
+  top: -15%;
+  left: 85%;
+}
+.nagaland{
+  top: -9%;
+  left: 88%;
+}
+.manipur{
+  top: -6%;
+  left: 86%;
+}
+.mizoram{
+  top: -3%;
+  left: 83%;
+}
+.tripura{
+  top: -7%;
+  left: 76%;
+}
+.jammu{
+  top: -38%;
+  left: 23%;
+}
+.goa{
+  top:16%;
+  left: 20%;
+}
+.lakshadweep{
+  top: 25%;
+  left: 10%;
+}
+.aan{
+  top: 20%;
+  left: 80%;
+}
+.kashmir{
+  top: -50%;
+  left: 32%;
+}
+@media screen and (max-width:500px) {
+  header{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  #logo{
+    margin: auto;
+  }
+  #searchForm{
+    width: 85vw;
+  }
+  #searchInput{
+    width: 90%;
+  }
+  #searchForm button{
+    width: 10%;
+  }
+  .Forcast{
+    padding:15px 10px;
+    width: 90%;
+    height: fit-content;
+    font-size: 11px;
+    font-weight: 100;
+    gap: 10px;
+  }
+  .Forcast>div{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .Forcast>div>div{
+    width: 100%;
+  }
+  .Forcast>div>div:last-child{
+    display: grid;
+    justify-content: center;
+  }
+  #mapSection{
+    height: 400px;
+  }
+  .statename{
+    font-size: 10px;
+  }
+  .up {
+    top: 37%;
+    left: 40%;
+  }
+  .bihar{
+    top: 39%;
+    left: 60%;
+  }
+  .uk {
+    top: 22%;
+    left: 38%;
+  }
+  .hp {
+    top: 15%;
+    left: 30%;
+  }
+  .haryana{
+    top: 20%;
+    left: 25%;
+  }
+  .punjab{
+    top: 13%;
+    left: 24%;
+  }
+  .rajasthan{
+    top: 25%;
+    left: 16%;
+  }
+  .gujarat{
+    top: 33%;
+    left: 12%;
+  }
+  .delhi{
+    top: 14%;
+    left: 32%;
+  }
+  .jharkhand{
+    top: 25%;
+    left: 54%;
+  }
+  .mp{
+    top: 25%;
+    left: 28%;
+  }
+  .maharashtra{
+    top: 34%;
+    left: 20%;
+  }
+  .chhattisgarh{
+    top: 25%;
+    left: 43%;
+  }
+  .telangana{
+    top: 33%;
+    left: 34%;
+  }
+  .odisha{
+    top: 23%;
+    left: 54%;
+  }
+  .wb{
+    top: 13%;
+    left: 65%;
+  }
+  .karnataka{
+    top: 37%;
+    left: 24%;
+  }
+  .ap{
+    top: 32%;
+    left: 35%;
+  }
+  .tn{
+    top: 40%;
+    left: 35%;
+  }
+  .kerala{
+    top: 40%;
+    left:25%;
+  }
+  .sikkim{
+    top: -15%;
+    left: 66%;
+  }
+  .assam{
+    top: -14%;
+    left: 76%;
+  }
+  .meghalaya{
+    top: -12%;
+    left: 73%;
+  }
+  .arunachal{
+    top: -25%;
+    left: 80%;
+  }
+  .nagaland{
+    top: -22%;
+    left: 88%;
+  }
+  .manipur{
+    top: -20%;
+    left: 86%;
+  }
+  .mizoram{
+    top: -15%;
+    left: 83%;
+  }
+  .tripura{
+    top: -20%;
+    left: 73%;
+  }
+  .jammu{
+    top: -53%;
+    left: 20%;
+  }
+  .goa{
+    top:0dvb;
+    left: 20%;
+  }
+  .lakshadweep{
+    top: 7%;
+    left: 6%;
+  }
+  .aan{
+    top: 10%;
+    left: 80%;
+  }
+  .kashmir{
+    top: -65%;
+    left: 32%;
+  }
+}
