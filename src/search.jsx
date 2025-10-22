@@ -80,6 +80,7 @@ export default function Search() {
         `${API}?q=${location}&appid=${API_key}&units=metric`
       );
       const data = await response.json();
+      console.log(location);
       setResult({
         resultType: "Live Location Forcast",
         place: data.name,
@@ -109,7 +110,7 @@ export default function Search() {
             searchLocation: "",
             selectedLocation: "",
           });
-          findLiveLocation(data[0].name);
+          findLiveLocation(data[0].state);
           // console.log("No location data found");
         }
       } catch (error) {
