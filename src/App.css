@@ -25,14 +25,13 @@ body {
 
 header {
   /* border: 1px solid red; */
-  max-width: 100%;
+  max-width: calc(100% - 40px);
   padding: 30px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #logo {
-  
   font-size: 40px;
   font-weight: 800;
 }
@@ -41,28 +40,27 @@ header {
   text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
-#searchForm{
-    /* border: 1px solid red; */
+#searchForm {
+  /* border: 1px solid red; */
   border-radius: 7px;
   overflow: hidden;
   height: 30px;
   display: flex;
-  
 }
 #searchInput {
   /* border: 1px solid red; */
   border: transparent;
   outline: none;
   padding-left: 10px;
- height: 100%;
+  height: 100%;
   outline: none;
   text-align: start;
   width: 500px;
 }
-#searchForm button{
+#searchForm button {
   padding: 0px 10px;
   height: 100%;
-  background-color: white;
+  background-color: rgb(3, 3, 3);
   border: none;
 }
 .Forcast {
@@ -75,28 +73,28 @@ header {
   color: white;
   font-size: 12px;
   text-shadow: 0px 0px 10px rgba(72, 72, 72, 0.39);
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.Forcast>div{
+.Forcast > div {
   /* border: 1px solid red; */
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.symbols{
+.symbols {
   /* border: 1px solid red; */
   height: 150px;
 }
-#SearchForcastIcon{
+#SearchForcastIcon {
   height: 100%;
 }
 #mapSection {
   margin: auto;
-  width: min(500px,100%);
+  width: min(500px, 100%);
   height: 500px;
   /* overflow: hidden; */
   display: flex;
@@ -128,7 +126,7 @@ header {
   text-shadow: 0px 0px 10px rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   height: 10px;
-  width:fit-content;
+  width: fit-content;
   position: relative;
   /* background-image: url(./assets/pinActive.png); */
   background-size: 10px;
@@ -140,7 +138,7 @@ header {
   top: 37%;
   left: 40%;
 }
-.bihar{
+.bihar {
   top: 39%;
   left: 60%;
 }
@@ -152,171 +150,177 @@ header {
   top: 17%;
   left: 30%;
 }
-.haryana{
+.haryana {
   top: 23%;
   left: 29%;
 }
-.punjab{
+.punjab {
   top: 16%;
   left: 26%;
 }
-.rajasthan{
+.rajasthan {
   top: 25%;
   left: 20%;
 }
-.gujarat{
+.gujarat {
   top: 35%;
   left: 13%;
 }
-.delhi{
+.delhi {
   top: 17.5%;
   left: 33.5%;
 }
-.jharkhand{
+.jharkhand {
   top: 30%;
   left: 56%;
 }
-.mp{
+.mp {
   top: 30%;
   left: 32%;
 }
-.maharashtra{
+.maharashtra {
   top: 40%;
   left: 22%;
 }
-.chhattisgarh{
+.chhattisgarh {
   top: 30%;
   left: 45%;
 }
-.telangana{
+.telangana {
   top: 40%;
   left: 36%;
 }
-.odisha{
+.odisha {
   top: 29%;
   left: 57%;
 }
-.wb{
+.wb {
   top: 20%;
   left: 65%;
 }
-.karnataka{
+.karnataka {
   top: 45%;
   left: 24%;
 }
-.ap{
+.ap {
   top: 40%;
   left: 35%;
 }
-.tn{
+.tn {
   top: 50%;
   left: 35%;
 }
-.kerala{
+.kerala {
   top: 50%;
   left: 29%;
 }
-.sikkim{
+.sikkim {
   top: -5%;
   left: 66%;
 }
-.assam{
+.assam {
   top: -4%;
   left: 80%;
 }
-.meghalaya{
+.meghalaya {
   top: -2%;
   left: 73%;
 }
-.arunachal{
+.arunachal {
   top: -15%;
   left: 85%;
 }
-.nagaland{
+.nagaland {
   top: -9%;
   left: 88%;
 }
-.manipur{
+.manipur {
   top: -6%;
   left: 86%;
 }
-.mizoram{
+.mizoram {
   top: -3%;
   left: 83%;
 }
-.tripura{
+.tripura {
   top: -7%;
   left: 76%;
 }
-.jammu{
+.jammu {
   top: -38%;
   left: 23%;
 }
-.goa{
-  top:16%;
+.goa {
+  top: 16%;
   left: 20%;
 }
-.lakshadweep{
+.lakshadweep {
   top: 25%;
   left: 10%;
 }
-.aan{
+.aan {
   top: 20%;
   left: 80%;
 }
-.kashmir{
+.kashmir {
   top: -50%;
   left: 32%;
 }
-@media screen and (max-width:500px) {
-  header{
+@media screen and (max-width: 500px) {
+  header {
     display: grid;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
   }
-  #logo{
+  #logo {
     margin: auto;
   }
-  #searchForm{
+  #searchForm {
     width: 85vw;
   }
-  #searchInput{
+  #searchInput {
     width: 90%;
   }
-  #searchForm button{
+  #searchForm button {
     width: 10%;
   }
-  .Forcast{
-    padding:15px 10px;
+  .Forcast {
+    padding: 15px 10px;
     width: 90%;
     height: fit-content;
     font-size: 11px;
     font-weight: 100;
     gap: 10px;
   }
-  .Forcast>div{
+  .Forcast > div {
     flex-direction: column;
     gap: 10px;
   }
-  .Forcast>div>div{
+  .Forcast > div > div {
     width: 100%;
   }
-  .Forcast>div>div:last-child{
+  .Forcast > div > div:last-child {
     display: grid;
     justify-content: center;
   }
-  #mapSection{
+  #mapSection {
+    width: 100%;
     height: 400px;
   }
-  .statename{
+  #contryMap {
+    width: 100%;
+  }
+  .statename {
     font-size: 10px;
+    text-shadow: none;
+    color: rgb(1, 1, 1);
   }
   .up {
     top: 37%;
     left: 40%;
   }
-  .bihar{
+  .bihar {
     top: 39%;
     left: 60%;
   }
@@ -328,119 +332,119 @@ header {
     top: 15%;
     left: 30%;
   }
-  .haryana{
+  .haryana {
     top: 20%;
     left: 25%;
   }
-  .punjab{
+  .punjab {
     top: 13%;
     left: 24%;
   }
-  .rajasthan{
+  .rajasthan {
     top: 25%;
     left: 16%;
   }
-  .gujarat{
+  .gujarat {
     top: 33%;
     left: 12%;
   }
-  .delhi{
+  .delhi {
     top: 14%;
     left: 32%;
   }
-  .jharkhand{
+  .jharkhand {
     top: 25%;
     left: 54%;
   }
-  .mp{
+  .mp {
     top: 25%;
     left: 28%;
   }
-  .maharashtra{
+  .maharashtra {
     top: 34%;
     left: 20%;
   }
-  .chhattisgarh{
+  .chhattisgarh {
     top: 25%;
     left: 43%;
   }
-  .telangana{
+  .telangana {
     top: 33%;
     left: 34%;
   }
-  .odisha{
+  .odisha {
     top: 23%;
     left: 54%;
   }
-  .wb{
+  .wb {
     top: 13%;
     left: 65%;
   }
-  .karnataka{
+  .karnataka {
     top: 37%;
     left: 24%;
   }
-  .ap{
+  .ap {
     top: 32%;
     left: 35%;
   }
-  .tn{
+  .tn {
     top: 40%;
     left: 35%;
   }
-  .kerala{
+  .kerala {
     top: 40%;
-    left:25%;
+    left: 25%;
   }
-  .sikkim{
+  .sikkim {
     top: -15%;
     left: 66%;
   }
-  .assam{
+  .assam {
     top: -14%;
     left: 76%;
   }
-  .meghalaya{
+  .meghalaya {
     top: -12%;
     left: 73%;
   }
-  .arunachal{
+  .arunachal {
     top: -25%;
     left: 80%;
   }
-  .nagaland{
+  .nagaland {
     top: -22%;
     left: 88%;
   }
-  .manipur{
+  .manipur {
     top: -20%;
     left: 86%;
   }
-  .mizoram{
+  .mizoram {
     top: -15%;
     left: 83%;
   }
-  .tripura{
+  .tripura {
     top: -20%;
     left: 73%;
   }
-  .jammu{
+  .jammu {
     top: -53%;
     left: 20%;
   }
-  .goa{
-    top:0dvb;
+  .goa {
+    top: 0dvb;
     left: 20%;
   }
-  .lakshadweep{
+  .lakshadweep {
     top: 7%;
     left: 6%;
   }
-  .aan{
+  .aan {
     top: 10%;
     left: 80%;
   }
-  .kashmir{
+  .kashmir {
     top: -65%;
     left: 32%;
   }

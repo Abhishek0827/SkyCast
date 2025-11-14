@@ -1,6 +1,8 @@
 import MainWeather from "./Forcast.jsx";
 import { useState, useEffect } from "react";
 import { API, API_key } from "./api.js";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 export default function Search() {
   let [symbol, setSymbols] = useState("");
   let [city, setCity] = useState({
@@ -176,7 +178,7 @@ export default function Search() {
           <button type="submit">
             <i
               className="fa-solid fa-magnifying-glass"
-              style={{ color: "#000000" }}
+              style={{ color: "#ffffffff" }}
             ></i>
           </button>
         </form>
